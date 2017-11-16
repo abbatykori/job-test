@@ -8,7 +8,6 @@ function fetchBooksByAuthors(authorQuery) {
         return findBooks.author == authorQuery;
     })
   }
-console.log(fetchBooksByAuthors(authorQuery))
 
 
 
@@ -19,4 +18,3 @@ let titleResults = []
 results.forEach(function(results){
     titleResults.push(results.title)
 })
-console.log(titleResults)
