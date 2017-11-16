@@ -1,6 +1,6 @@
 const books = require('./books')
 
-let orderBooksbyRatings = booksObject => {
+module.exports = orderBooksbyRatings = booksObject => {
     booksObject.sort(function(ratingA, ratingB){
         if (ratingA.ratings > ratingB.ratings){
             return -1;
@@ -9,5 +9,3 @@ let orderBooksbyRatings = booksObject => {
         }
     }) 
 }
-orderBooksbyRatings(books);
-console.log(books);
