@@ -1,7 +1,7 @@
 const books = require('./books')
 const orderBooksByRatings = require('./order-books-by-ratings')
 
-// orderBooksByRatings(books)
+orderBooksByRatings(books)
 
 module.exports = {
     getTopBooks: function(n) {
