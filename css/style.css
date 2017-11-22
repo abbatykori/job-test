@@ -1,0 +1,89 @@
+/*
+    SASS was compiled using Prepos + Autoprefixer.
+    Fonts were loaded via the Google Fonts CDN.
+    I used CSS custom properties instead of SASS Variables.
+*/
+* {
+  font-family: 'Nunito', sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+button {
+  font-weight: bold;
+  font-size: 21px;
+  background: #fff;
+  color: #333;
+  line-height: 48px;
+  height: 48px;
+  border-radius: 24px;
+  border: none;
+  min-width: 150px;
+  outline: none;
+  padding: 0 30px;
+  -webkit-box-shadow: 0 3px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 3px 0px rgba(0, 0, 0, 0.25);
+  margin: 0 10px 10px 10px; }
+  button:hover {
+    cursor: pointer; }
+  button:active {
+    line-height: 51px;
+    -webkit-box-shadow: inset 0 3px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0 3px 0px rgba(0, 0, 0, 0.25); }
+  button::-moz-focus-inner {
+    border: 0; }
+
+.wrapper {
+  max-width: 1178px;
+  background: #f3f4f6;
+  padding: 63px;
+  margin: auto; }
+
+@media screen and (min-width: 720px) {
+  .grid {
+    width: 100%;
+    display: block; }
+    .grid .one-third, .grid .one-half, .grid .one-quarter, .grid .one-full {
+      float: left;
+      margin: 0 3% 0 0; }
+    .grid .one-third {
+      width: 31%; }
+      .grid .one-third:nth-last-child(1) {
+        margin: 0; }
+    .grid:after {
+      content: ' ';
+      display: block;
+      clear: both; } }
+
+.system-message {
+  --system-message-color: #333;
+  --system-message-gradient: linear-gradient(45deg, gray, #333);
+  padding: 60px 20px 40px;
+  border-radius: 10px;
+  background-image: var(--system-message-gradient);
+  text-align: center;
+  color: #fff;
+  margin: 0 auto 20px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25); }
+  .system-message__heading {
+    font-size: 24px; }
+  .system-message__content {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 28px 0 50px; }
+  .system-message__footer {
+    font-size: 21px; }
+    .system-message__footer button {
+      color: var(--system-message-color); }
+  .system-message--warning {
+    --system-message-color: #fd6266;
+    --system-message-gradient: linear-gradient(45deg, #fd916a, #fd6266); }
+  .system-message--error {
+    --system-message-color: #d00269;
+    --system-message-gradient: linear-gradient(45deg, #f44f60, #d00269); }
+  .system-message--success {
+    --system-message-color: #30cc71;
+    --system-message-gradient: linear-gradient(45deg, #6eecce, #30cc71); }
+
+

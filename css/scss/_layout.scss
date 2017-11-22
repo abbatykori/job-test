@@ -1,0 +1,32 @@
+.wrapper{
+    max-width: 1178px;
+    background: #f3f4f6;
+    padding: 63px;
+    margin: auto;
+}
+
+.grid{
+    @media screen and (min-width: 720px){
+        
+        width: 100%;
+        display: block;
+        .one-third, .one-half, .one-quarter, .one-full {
+            float: left;
+            margin: 0 3% 0 0;
+        }
+
+        .one-third{
+            width: 31%;
+            &:nth-last-child(1){
+                margin: 0;
+            }
+        } 
+
+        &:after{
+            content: ' ';
+            display: block;
+            clear: both;
+        }
+
+    }
+}
